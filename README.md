@@ -13,8 +13,9 @@ The system needs to:
 
 - have the ability to reprocess historical data in case of bugs in the processing logic.
 
+![architecture](architecture.png)
+
+### Analysis
 According to the system requirements, we need to store the <b> high volume data </b> and provide the <b> high read/ write capability </b>, also need have <b> HA </b> mechansim. 
 
 For Google Analytics has four hierarchies, includes <b> collection, configuration, processing and reporting</b>.
-
-![Kiku](architecture.png)
