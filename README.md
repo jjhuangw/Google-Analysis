@@ -25,7 +25,7 @@ For Google Analytics has four hierarchies, includes <b> collection, configuratio
 - Clients need to embed a tracking code to send the data to server side.
 ##### Service
 - Service side adopts micro service architecture and can be deployed on <b> Kubernetes </b> or container based environment to provide the <b> scalability, high availability and fault-tolerance capability </b>.
-- For service development, we can base on Spring boot framework.
+- For service development, we can base on <b>Spring boot </b>framework.
 - In front of the service, we can set up a load balancer to balance the network traffic.
 ##### Kafka + Spark Streaming
 - Because the data what we collect is <b>time series data</b>, the time series data can be for time range query. For range queries for multiple time series, the results are usually aggregated. This aggregation is for values at the same time point on different time series. 
