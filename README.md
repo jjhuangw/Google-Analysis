@@ -32,10 +32,10 @@ For Google Analytics has four hierarchies, includes <b> collection, configuratio
 - We can have the pre-aggregation and post-aggregation to compute data. Pre-aggregation computes the data and then store it, while post-aggregation queries the stored data and then computes it. 
 - For stream computing, we can set up <b> Apache Kafka and Spark Streaming </b>. Kafka ingest data then Spark Streaming can compute data. Both also have scalable ability.
 #####  ElasticSearch + OpenTSDB
-- Time series data is typical non-relational data. It is characterized by high concurrency, high throughput, large data volume.The query mode is usually range query. For these data characteristics, it is very suitable to use a database such as NoSQL. In here, we can choose OpenTSDB as our open source data storage solution. 
-- For metadata search, Metadata for the time series will also be large in magnitude, so a distributed database is first considered. In addition, because the query mode needs to support retrieval, the database needs to support index, and open source Elasticsearch can be used.
+- Time series data is typical non-relational data. It is characterized by high concurrency, high throughput, large data volume.The query mode is usually range query. For these data characteristics, it is very suitable to use a database such as NoSQL. In here, we can choose <b>OpenTSDB</b> as our open source data storage solution. 
+- For metadata search, Metadata for the time series will also be large in magnitude, so a distributed database is first considered. In addition, because the query mode needs to support retrieval, the database needs to support index, and open source <b>Elasticsearch</b> can be used.
 - Furthermore, we can separate data into cold and hot data. Recently written data is accessed more frequently. Based on this feature, the hot data adopts storage medium with a higher hardware specification, which greatly improves the overall query efficiency, and cold data can use the cheaper cost-effective instances.
-- In long term analysis or data reprocessing, we can have a Spark job to batch process the cold data, and reduce the user impact scope. 
+- In long term analysis or data reprocessing, we can have a <b>Spark</b> job to batch process the cold data, and reduce impact on our users. 
 ##### Presto
 - In data analysis, we can provide the three ways for data access in our API.
 - For interactive data analysis, usually requires a powerful distributed computing engine. <b> Presto </b> can be selected. 
