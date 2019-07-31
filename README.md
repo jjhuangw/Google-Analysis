@@ -29,7 +29,7 @@ For Google Analytics has four hierarchies, includes <b> collection, configuratio
 - In front of the service, we can set up a load balancer to balance the network traffic.
 ##### Kafka + Spark Streaming
 - Because the data what we collect is <b>time series data</b>, the time series data can be for time range query. For range queries for multiple time series, the results are usually aggregated. This aggregation is for values at the same time point on different time series. 
-- We can have the pre-aggregation and post-aggregation to compute data. Pre-aggregation computes the data and then store it, wile post-aggregation queries the stored data and then computes it. 
+- We can have the pre-aggregation and post-aggregation to compute data. Pre-aggregation computes the data and then store it, while post-aggregation queries the stored data and then computes it. 
 - For stream computing, we can set up <b> Apache Kafka and Spark Streaming </b>. Kafka ingest data then Spark Streaming can compute data. Both also have scalable ability.
 #####  ElasticSearch + OpenTSDB
 - Time series data is typical non-relational data. It is characterized by high concurrency, high throughput, large data volume.The query mode is usually range query. For these data characteristics, it is very suitable to use a database such as NoSQL. In here, we can choose OpenTSDB as our open source data storage solution. 
